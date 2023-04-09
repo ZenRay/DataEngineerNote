@@ -1,0 +1,28 @@
+version: "3"
+services:
+  master:
+    tty: true
+    image: ${BASE_IMG}
+    container_name: master
+    hostname: master
+    ports:
+      - 9870:9870
+      - 9820:9820
+      - 9860:9860
+  
+  node1:
+    tty: true
+    image: ${BASE_IMG}
+    container_name: node1
+    hostname: node1
+    ports:
+      - 9868:9868
+
+
+  node2:
+    tty: true
+    image: ${BASE_IMG}
+    container_name: node2
+    hostname: node2
+    ports:
+      - 9869:9869
