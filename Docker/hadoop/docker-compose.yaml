@@ -26,3 +26,8 @@ services:
     hostname: node2
     ports:
       - 9869:9869
+
+
+networks:
+  bigdata:
+    driver: bridge
